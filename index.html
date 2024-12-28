@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pocket.dev</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="head">
+	<h1>pocket.dev</h1>
+	<h3>Minecraft Pocket Edition Developers</h3>
+	<input id="search-bar" placeholder=" Updated For Latest Minecraft Version " readonly>
+	</div><br><br><br>
+	
+	<div class="uuid">
+		<h2>UUID Generator</h2>
+		<input type="text" id="uuid-show" placeholder="tap on generate to generate uuid" readonly><br>
+		<button id="uuid-button" onclick="uuidgen()">Generate</button><br>
+		<p>tap on the 'generate' button to generate unlimited uuids for free. to copy the uuid, hold on the uuid text and copy it. uuids are used for giving a id to every minecraft addon, pack, skin pack etc..</p>
+	</div><br><br>
+	
+	<div class="manifestRP">
+		<h2>Manifest.JSON RP</h2>
+		<textarea id="manifestRPShow" readonly>{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "pack.uuid",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 20, 30 ]
+    },
+    "modules": [
+        {
+            "description": "module.description",
+            "type": "resources",
+            "uuid": "module.uuid",
+            "version": [0, 0, 1]
+        }
+    ]
+}</textarea><br>
+<p> manifest.json code for resource packs </p>
+	</div><br><br>
+	
+	<div class="manifestBP">
+		<h2>Manifest.JSON BP</h2>
+		<textarea id="manifestBPShow" readonly>{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "pack.uuid",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 20, 30 ]
+    },
+    "modules": [
+        {
+            "description": "module.description",
+            "type": "behavior",
+            "uuid": "pack.uuid",
+            "version": [0, 0, 1]
+        }
+    ]
+}</textarea><br>
+		<p> manifest.json code for behavior packs </p>
+	</div><br><br>
+	
+	<div class="loadingMessagesJSON">
+		<h2>Loading_Messages.JSON</h2>
+		<textarea id="loadingMessagesJSONTextarea" readonly>{
+  "loading_messages": [
+  "loading_message 1",
+   "loading_message 2",
+   	 "loading_message 3",
+	"loading_message 4",
+	" loading_message 5"
+]
+}</textarea>
+	</div><br><br>
+	
+	<div class="splashesJSON">
+		<h2>Splashes.JSON</h2>
+		<textarea id="splashesTextarea" readonly>{
+"splashes":[
+  "slashes 1",
+   "splashes 2",
+   	 "splashes 3",
+	"splashes 4",
+	"splashes 5"
+]
+}
+</textarea>
+	</div><br><br>
+	
+	<div class="jsonEditor">
+		<h2>JSON Editor</h2>
+		<textarea id="jsonEditorArea" oninput="json()" placeholder="JSON Editor..."></textarea><br>
+		<textarea id="jsonConsole" placeholder="Console..." readonly></textarea><br>
+	</div>
+	
+	
+	<br><br><br><div class="footer">
+		<h1>pocket.dev</h1>
+		<p>this website is not affiliated with Mojang AB or with Microsoft in any way</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
