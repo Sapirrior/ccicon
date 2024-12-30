@@ -1,0 +1,22 @@
+@font-face {
+  font-family: roboto;
+  src: url('/font/Roboto-Regular.ttf');
+}
+
+* {
+  font-family: roboto;
+  background-color: #2D2E30;
+  color: white;
+  margin: auto;
+  zoom: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: #4A80DA;
+}
+
+textarea {
+  color: green;
+  background-color: black;
+}
