@@ -3,11 +3,6 @@
   src: url("MinecraftRegular.otf");
 }
 
-@font-face {
-  font-family: minecraftBold;
-  src: url("/fonts/MinecraftBold.otf");
-}
-
 html {
   font-family: minecraft;
   margin-top: 4px;
