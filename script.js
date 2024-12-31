@@ -11,7 +11,7 @@ function start() {
       carddiv.classList.add('card');
       
       const imag = document.createElement('img');
-      imag.src = `icons/${img}`;
+      imag.src = `https://raw.githubusercontent.com/Sapirrior/ccicon/refs/heads/main/icons/${img}`;
       imag.alt = 'icon'
       
       carddiv.appendChild(imag);
