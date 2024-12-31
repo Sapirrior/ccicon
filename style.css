@@ -1,0 +1,44 @@
+@font-face {
+  font-family: minecraft;
+  src: url("/font/MinecraftRegular.otf");
+}
+
+@font-face {
+  font-family: minecraftBold;
+  src: url("/font/MinecraftBold.otf");
+}
+
+html {
+  font-family: minecraft;
+  margin-top: 4px;
+}
+
+body {
+  background-color: #000000;
+  color: #D0D6E2;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid rgb(75, 82, 92);
+  border-radius: 10px;
+  background-color: #222429;
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 20vh);
+  gap: 15px;
+  justify-content: center;
+}
+
+img {
+  width: 60%;
+  height: auto;
+}
+
+footer {
+  color: #6B7380;
+}
